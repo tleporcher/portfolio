@@ -1,24 +1,49 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebookF,
+  faInstagram,
+  faLinkedin
+} from "@fortawesome/free-brands-svg-icons";
+import * as faIcon from "@fortawesome/free-brands-svg-icons";
+import { faHeart, faCoffee } from "@fortawesome/free-solid-svg-icons";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      <div className="Sidebar">
+        <h2>Thomas Leporcher</h2>
+        <h4>thomas.leporcher@gmail.com</h4>
+        <a href="tel:+33699022971">+33 (0) 6 99 02 29 71</a>
+        <ul>
+          <li>Introduction</li>
+          <li>About</li>
+          <li>Projects</li>
+          <li>Timeline</li>
+        </ul>
+        <ul>
+          <li>
+            <FontAwesomeIcon icon={faFacebookF} />
+          </li>
+          <li>
+            <FontAwesomeIcon icon={faInstagram} />
+          </li>
+          <li>
+            <FontAwesomeIcon icon={faLinkedin} />
+            <FontAwesomeIcon icon={faIcon.faLinkedin} />
+          </li>
+        </ul>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Made with <FontAwesomeIcon icon={faHeart} /> and{" "}
+          <FontAwesomeIcon icon={faCoffee} />
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <p>Thanks Dhruv Barochiya for inspiration</p>
+      </div>
+      <div className="Content">
+        <h1>Hi! I'm Thomas</h1>
+      </div>
     </div>
   );
 }

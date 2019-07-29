@@ -1,0 +1,25 @@
+.homepage {
+  width: 100%;
+  background: url(../images/road.jpg) no-repeat center center;
+  background-size: cover;
+  filter: grayscale(50%);
+  color: white;
+  font-size: 18px;
+
+  &__caption {
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__description {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

@@ -1,0 +1,18 @@
+.navbar {
+  position: fixed;
+  width: 100vw;
+
+  &__navitems {
+    display: flex;
+    justify-content: flex-end;
+    text-transform: uppercase;
+  }
+
+  &__navitem {
+    margin: 0 1rem;
+
+    &:hover {
+      background-color: blue;
+    }
+  }
+}
